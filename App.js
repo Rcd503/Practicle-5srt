@@ -6,7 +6,7 @@ import Constants from 'expo-constants';
 import { Platform, StyleSheet, Text, TextInput, TouchableOpacity, View,AsyncStorage  } from 'react-native';
 import { render } from 'react-dom';
 import FlatListApidata from './Components/FlatListApidata'
-//import TextInput,TouchableOpacity for input and button
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -104,11 +104,7 @@ export default class App extends React.Component {
       >
       <Text style={styles.submitButtonText}> Submit receive</Text>
       </TouchableOpacity >
-      <TouchableOpacity onPress={<FlatListApidata/>}
-          style={styles.submitButton}
-      >
-      <Text style={styles.submitButtonText}> Submit receive</Text>
-      </TouchableOpacity >
+      
       <View style={{padding:10}}>
       <Text style={styles.textshow}>{this.state.email}</Text>
       <Text style={styles.textshow}>{this.state.password}</Text>
